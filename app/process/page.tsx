@@ -1,0 +1,3 @@
+import {Shell} from '../_shared';
+const a=[['01','7-Day Campaign Preparation','Review, positioning, page optimization and campaign readiness.'],['02','2–4 Week Pre-Launch','Audience building, lead generation, email funnel and launch preparation.'],['03','30–60 Day Campaign','Launch promotion, outreach, engagement, optimization and momentum.']];
+export default function Page(){return <Shell eyebrow="Process" title="PREPARE → BUILD → NURTURE → LAUNCH → REACH → CONVERT"><section className="section"><div className="container cards">{a.map(x=><article className="card" key={x[0]}><div className="eyebrow">Phase {x[0]}</div><h3>{x[1]}</h3><p>{x[2]}</p></article>)}</div></section></Shell>}

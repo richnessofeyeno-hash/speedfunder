@@ -1,0 +1,3 @@
+import {Shell} from '../_shared';
+const p=[['Pre-Launch','$600','Build the foundation before launch.'],['Launch','$800','Accelerate an active campaign.'],['Full Campaign Management','$1,200','Our flagship, standalone campaign management package.']];
+export default function Page(){return <Shell eyebrow="Pricing" title="CHOOSE THE LEVEL OF MOMENTUM YOU NEED."><section className="section"><div className="container pricing">{p.map(x=><article className={'card '+(x[0].startsWith('Full')?'featured':'')} key={x[0]}><div className="eyebrow">{x[0]}</div><div className="price">{x[1]}</div><p>{x[2]}</p></article>)}</div></section></Shell>}
